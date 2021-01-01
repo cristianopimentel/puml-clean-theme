@@ -1,0 +1,98 @@
+@startuml(id=clean)
+skinparam Actor {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam Agent {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam artifact {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam boundary {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam card {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam circle {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam cloud {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam collections {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam component {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam control {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam database {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam entity {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam file {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam folder {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam frame {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam interface {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam label {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam node {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam package {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam queue {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam rectangle {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam stack {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam storage {
+    BackgroundColor #fff
+    BorderColor #000
+}
+skinparam usecase {
+    BackgroundColor #fff
+    BorderColor #000
+}
+@enduml
