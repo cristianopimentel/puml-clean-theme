@@ -1,5 +1,5 @@
 @startuml
-!include component-diagram.puml
+!include deployment-diagram.puml
 
 actor actor 
 agent agent
@@ -9,7 +9,7 @@ card card
 circle circle
 cloud cloud
 collections collections
-component component
+component component <<new>>
 control control
 database database
 entity entity

@@ -1,0 +1,127 @@
+@startuml(id=clean-deployment)
+
+!$ThemeBackgroundColor = "#F2F1F0"
+!$ThemeBorderColor = "#000"
+!$ColorNewItem = "#5CD85A"
+
+skinparam actor {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam agent {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam artifact {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam boundary {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam card {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam circle {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam cloud {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam collections {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam component {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam control {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam database {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam entity {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam file {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam folder {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam frame {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam interface {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam label {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam node {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam package {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam queue {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam rectangle {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam stack {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam storage {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+skinparam usecase {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ColorNewItem
+}
+@enduml
