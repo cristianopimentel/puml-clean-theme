@@ -1,20 +1,18 @@
 @startuml
 !include deployment-diagram.puml
 
-actor actor 
+actor actor
 
 rectangle company <<internal>> {
     component newComponent <<new>>
     component removeComponent <<remove>>
 }
-rectangle vendor <<external>> {
+rectangle vendor <<external>><<firewalled>> {
     component updateComponent <<update>>
 }
 
-note "This is a note"
-
 actor --> newComponent
-newComponent -> updateComponent
+newComponent -> updateComponent 
 
 agent agent
 artifact artifact

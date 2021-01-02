@@ -13,7 +13,9 @@
 !$ThemeSInternalBackgroundColor = "#APPLICATION"
 !$ThemeSExternalBackgroundColor = "#Snow"
 
-
+'   Firewalled
+!$ThemeSFirewalledBorderColor = "#Red"
+!$ThemeSFirewalledBorderStyle = "dashed"
 
 skinparam actor {
     BackgroundColor $ThemeBackgroundColor
@@ -52,6 +54,9 @@ skinparam card {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam circle {
     BackgroundColor $ThemeBackgroundColor
@@ -62,6 +67,9 @@ skinparam circle {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam cloud {
     BackgroundColor $ThemeBackgroundColor
@@ -72,6 +80,9 @@ skinparam cloud {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+    
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam collections {
     BackgroundColor $ThemeBackgroundColor
@@ -82,6 +93,9 @@ skinparam collections {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam component {
     BackgroundColor $ThemeBackgroundColor
@@ -127,6 +141,9 @@ skinparam folder {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam frame {
     BackgroundColor $ThemeBackgroundColor
@@ -137,6 +154,9 @@ skinparam frame {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam interface {
     BackgroundColor $ThemeBackgroundColor
@@ -161,6 +181,9 @@ skinparam node {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam package {
     BackgroundColor $ThemeBackgroundColor
@@ -185,6 +208,9 @@ skinparam rectangle {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam stack {
     BackgroundColor $ThemeBackgroundColor
@@ -202,6 +228,9 @@ skinparam storage {
 
     BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
     BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
 }
 skinparam usecase {
     BackgroundColor $ThemeBackgroundColor
