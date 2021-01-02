@@ -4,149 +4,174 @@
 !$ThemeBorderColor = "#Black"
 !$ThemeSNewBackgroundColor = "#TECHNOLOGY"
 !$ThemeSUpdateBackgroundColor = "#NavajoWhite"
+!$ThemeSRemoveBackgroundColor = "#LightPink"
 
 skinparam actor {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam agent {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam artifact {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam boundary {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam card {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam circle {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam cloud {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam collections {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam component {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam control {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam database {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam entity {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam file {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam folder {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam frame {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam interface {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam label {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam node {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam package {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam queue {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam rectangle {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam stack {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam storage {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 skinparam usecase {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
     BackgroundColor<<new>> $ThemeSNewBackgroundColor
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
 @enduml
