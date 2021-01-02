@@ -1,0 +1,262 @@
+@startuml(id=clean-deployment)
+
+'   General Styles
+!$ThemeBackgroundColor = "#WhiteSmoke"
+!$ThemeBorderColor = "#Black"
+!$ThemeArrowColor = "#Black"
+
+'   Statuses
+!$ThemeSNewBackgroundColor = "#TECHNOLOGY"
+!$ThemeSUpdateBackgroundColor = "#NavajoWhite"
+!$ThemeSRemoveBackgroundColor = "#LightPink"
+
+'   Internal/External
+!$ThemeSInternalBackgroundColor = "#APPLICATION"
+!$ThemeSExternalBackgroundColor = "#Snow"
+
+'   Firewalled
+!$ThemeSFirewalledBorderColor = "#Red"
+!$ThemeSFirewalledBorderStyle = "dashed"
+
+skinparam ArrowColor $ThemeArrowColor
+
+skinparam actor {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam agent {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam artifact {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam boundary {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam card {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam circle {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam cloud {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+    
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam collections {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam component {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam control {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam database {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam entity {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam file {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam folder {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam frame {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam interface {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam label {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam node {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam package {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam queue {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam rectangle {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam stack {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+skinparam storage {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+
+    BackgroundColor<<internal>> $ThemeSInternalBackgroundColor
+    BackgroundColor<<external>> $ThemeSExternalBackgroundColor
+
+    BorderColor<<firewalled>> $ThemeSFirewalledBorderColor
+    BorderStyle<<firewalled>> $ThemeSFirewalledBorderStyle
+}
+skinparam usecase {
+    BackgroundColor $ThemeBackgroundColor
+    BorderColor $ThemeBorderColor
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
+    BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
+}
+
+'   Add Legend
+!procedure $Legend($hasEnvironment = 0)
+    skinparam LegendBackgroundColor #white
+
+    legend right
+    |= |= Description |
+    |<$ThemeSNewBackgroundColor> | To Add |
+    |<$ThemeSUpdateBackgroundColor> | To Update |
+    |<$ThemeSRemoveBackgroundColor> | To Remove |
+    !if ($hasEnvironment)
+    |<$ThemeSInternalBackgroundColor> | Internal Environment |
+    |<$ThemeSExternalBackgroundColor>| External Environment |
+    |<color:$ThemeSFirewalledBorderColor> - - | Firewalled Environment |
+    !endif
+    endlegend
+!endprocedure
+@enduml

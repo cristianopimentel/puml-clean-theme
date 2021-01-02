@@ -1,0 +1,24 @@
+@startuml
+!include deployment-diagram.puml
+
+actor actor
+
+cloud AWS {
+    rectangle companyVPC <<internal>> {
+        component newComponent <<new>>
+        component removeComponent <<remove>>
+    }
+}
+
+rectangle "Vendor's On-Premise" <<external>><<firewalled>> {
+    component updateComponent <<update>>
+}
+
+actor --> newComponent : Portal Access\nHTTPS
+newComponent --> updateComponent : REST API
+
+rectangle "Example\nStandard Style\n(Gray)"
+
+'   Add the Legend with Environment Information
+$Legend(1)
+@enduml
