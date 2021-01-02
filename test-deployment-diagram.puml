@@ -1,6 +1,9 @@
 @startuml
 !include deployment-diagram.puml
 
+'AFD8F2 -> internal
+'EDF2F3 -> external
+
 actor actor 
 agent agent
 artifact artifact
@@ -9,7 +12,8 @@ card card
 circle circle
 cloud cloud
 collections collections
-component component <<new>>
+component newComponent <<new>>
+component updateComponent <<update>>
 control control
 database database
 entity entity

@@ -1,127 +1,152 @@
 @startuml(id=clean-deployment)
 
-!$ThemeBackgroundColor = "#F2F1F0"
-!$ThemeBorderColor = "#000"
-!$ColorNewItem = "#5CD85A"
+!$ThemeBackgroundColor = "#WhiteSmoke"
+!$ThemeBorderColor = "#Black"
+!$ThemeSNewBackgroundColor = "#TECHNOLOGY"
+!$ThemeSUpdateBackgroundColor = "#NavajoWhite"
 
 skinparam actor {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam agent {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam artifact {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam boundary {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam card {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam circle {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam cloud {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam collections {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam component {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam control {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam database {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam entity {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam file {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam folder {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam frame {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam interface {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam label {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam node {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam package {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam queue {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam rectangle {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam stack {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam storage {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 skinparam usecase {
     BackgroundColor $ThemeBackgroundColor
     BorderColor $ThemeBorderColor
-    BackgroundColor<<new>> $ColorNewItem
+    BackgroundColor<<new>> $ThemeSNewBackgroundColor
+    BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
 }
 @enduml
