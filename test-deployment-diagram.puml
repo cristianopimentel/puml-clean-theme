@@ -1,10 +1,21 @@
 @startuml
 !include deployment-diagram.puml
 
-'AFD8F2 -> internal
-'EDF2F3 -> external
-
 actor actor 
+
+rectangle company <<internal>> {
+    component newComponent <<new>>
+    component removeComponent <<remove>>
+}
+rectangle vendor <<external>> {
+    component updateComponent <<update>>
+}
+
+note "This is a note"
+
+actor --> newComponent
+newComponent -> updateComponent
+
 agent agent
 artifact artifact
 boundary boundary
@@ -12,9 +23,6 @@ card card
 circle circle
 cloud cloud
 collections collections
-component newComponent <<new>>
-component updateComponent <<update>>
-component removeComponent <<remove>>
 control control
 database database
 entity entity
