@@ -3,6 +3,7 @@
 '   General Styles
 !$ThemeBackgroundColor = "#WhiteSmoke"
 !$ThemeBorderColor = "#Black"
+!$ThemeArrowColor = "#Black"
 
 '   Statuses
 !$ThemeSNewBackgroundColor = "#TECHNOLOGY"
@@ -16,6 +17,8 @@
 '   Firewalled
 !$ThemeSFirewalledBorderColor = "#Red"
 !$ThemeSFirewalledBorderStyle = "dashed"
+
+skinparam ArrowColor $ThemeArrowColor
 
 skinparam actor {
     BackgroundColor $ThemeBackgroundColor
@@ -239,4 +242,21 @@ skinparam usecase {
     BackgroundColor<<update>> $ThemeSUpdateBackgroundColor
     BackgroundColor<<remove>> $ThemeSRemoveBackgroundColor
 }
+
+'   Add Legend
+!procedure $Legend($hasEnvironment = 0)
+    skinparam LegendBackgroundColor #white
+
+    legend right
+    |= |= Description |
+    |<$ThemeSNewBackgroundColor> | To Add |
+    |<$ThemeSUpdateBackgroundColor> | To Update |
+    |<$ThemeSRemoveBackgroundColor> | To Remove |
+    !if ($hasEnvironment)
+    |<$ThemeSInternalBackgroundColor> | Internal Environment |
+    |<$ThemeSExternalBackgroundColor>| External Environment |
+    |<color:$ThemeSFirewalledBorderColor> - - | Firewalled Environment |
+    !endif
+    endlegend
+!endprocedure
 @enduml

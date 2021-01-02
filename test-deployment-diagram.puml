@@ -3,37 +3,22 @@
 
 actor actor
 
-rectangle company <<internal>> {
-    component newComponent <<new>>
-    component removeComponent <<remove>>
+cloud AWS {
+    rectangle companyVPC <<internal>> {
+        component newComponent <<new>>
+        component removeComponent <<remove>>
+    }
 }
-rectangle vendor <<external>><<firewalled>> {
+
+rectangle "Vendor's On-Premise" <<external>><<firewalled>> {
     component updateComponent <<update>>
 }
 
-actor --> newComponent
-newComponent -> updateComponent 
+actor --> newComponent : Portal Access\nHTTPS
+newComponent --> updateComponent : REST API
 
-agent agent
-artifact artifact
-boundary boundary
-card card
-circle circle
-cloud cloud
-collections collections
-control control
-database database
-entity entity
-file file
-folder folder
-frame frame
-interface interface
-label label
-node node
-package package
-queue queue
-rectangle rectangle
-stack stack
-storage storage
-usecase usecase
+rectangle "Example\nStandard Style\n(Gray)"
+
+'   Add the Legend with Environment Information
+$Legend(1)
 @enduml
