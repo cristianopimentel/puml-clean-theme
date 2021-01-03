@@ -1,5 +1,7 @@
 @startuml(id=clean-deployment)
 
+skinparam linetype ortho
+
 '   General Styles
 !$ThemeBackgroundColor = "#WhiteSmoke"
 !$ThemeBorderColor = "#Black"
@@ -249,11 +251,11 @@ skinparam usecase {
 
     legend right
     |= |= Description |
-    |<$ThemeSNewBackgroundColor> | To Add |
-    |<$ThemeSUpdateBackgroundColor> | To Update |
-    |<$ThemeSRemoveBackgroundColor> | To Remove |
+    |<$ThemeSNewBackgroundColor>     | To Add |
+    |<$ThemeSUpdateBackgroundColor>| To Update |
+    |<$ThemeSRemoveBackgroundColor>| To Remove |
     !if ($hasEnvironment)
-    |<$ThemeSInternalBackgroundColor> | Internal Environment |
+    |<$ThemeSInternalBackgroundColor>| Internal Environment |
     |<$ThemeSExternalBackgroundColor>| External Environment |
     |<color:$ThemeSFirewalledBorderColor> - - | Firewalled Environment |
     !endif
